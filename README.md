@@ -40,7 +40,7 @@ While the core engine is Python-specific, the principles of multi-stage loading 
 
 Installation
 You need Python 3.6+ and the following library to run nyx_builder.py:
-pip install pycryptodomex
+    pip install pycryptodomex
 The generated loader.py also requires pycryptodomex to be installed on the target machine.
 
 Usage
@@ -49,8 +49,6 @@ Configuration and usage are simple and straightforward.
 Prepare your payload: Place your final Python script in the same directory and name it payload.py.
 Configure the builder (optional): Open nyx_builder.py and modify the SOURCE_FILE and OUTPUT_FILE variables at the top if you wish to use different names.
 Run the builder:
-python nyx_builder.py
-
+  python nyx_builder.py
 Deploy: The script will generate the packed_loader.py file (or the name you specified), which is now ready to be deployed.
-
 
